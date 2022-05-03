@@ -14,7 +14,7 @@ sed -i 's/Misisipi/Mississippi/' $s
 cat $s
 ```
 ## Problem 2:Change the second occurrence of "Sunday" to "Sunday is a holiday" in `weekday.txt`.
-###Contents of `weekday.txt`:
+### Contents of `weekday.txt`:
 ```
 Monday
 Tuesday
@@ -75,7 +75,7 @@ awk -v date="$(date)" '{print $0," ",date}' $s; sleep 2s
 ## Problem 4: `mkdir -p`, what does this command do?
 ### Solution
 When using `mkdir` with the `-p` option parent directories are created if needed to create a directory at the specified path.
-## Problem 5: Read your first name and last name and gree your name like this:
+## Problem 5: Read your first name and last name and greet your name like this:
 ```bash
 Hello Santhosh NC, How was your day?
 ```
