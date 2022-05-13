@@ -1,0 +1,8 @@
+#! usr/bin/bash
+# Author: Mike Mendez
+# Description: Ec2 userdata script to update instance and add an ssh public key to /home/ec2-user/.ssh/authorized_keys
+
+pubkey='ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPdax+vmP4zuv4/OFfJDc3HGU+6CBSv47EPgDxTNzTek MikeM@marsreturnship.com'
+
+yum update -y
+echo $pubkey >> /home/ec2-user/.ssh/authorized_keys
