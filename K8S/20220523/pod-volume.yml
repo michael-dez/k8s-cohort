@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-volume
+spec:
+  containers:
+  - name: pod-volume-container
+    image: k8s.gcr.io/test-webserver
+    volumeMounts:
+    - name: test-volume
+      mountPath: /test-pd
+  volumes:
+  - name: test-volume
+    hostPath:
+      path: /home
+      type: Directory
