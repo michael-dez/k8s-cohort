@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: 4pod
+  name: 4pod
+spec:
+  containers:
+  - image: nginx
+    name: 4pod-nginx
+  - image: redis
+    name: 4pod-redis
