@@ -1,0 +1,18 @@
+# ./node-selector-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: node-selector-pod
+  name: node-selector-pod
+spec:
+  containers:
+  - image: nginx
+    name: node-selector-pod
+    resources: {}
+  nodeSelector:
+    disk: ssd
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
