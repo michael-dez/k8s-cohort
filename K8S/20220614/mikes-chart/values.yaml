@@ -1,0 +1,7 @@
+pod:
+  name: mikes-pod
+  container: mikes-container
+service:
+  name: mikes-service
+    nodePort: 31291
+    port: 80
