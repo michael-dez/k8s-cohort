@@ -14,6 +14,8 @@
 #! usr/bin/python3
 
 """Returns the even numbers of a given range using a for loop."""
+
+
 def getEvens(intRange):
     if type(intRange) is not range:
         raise TypeError("intRange not of type range")
@@ -25,7 +27,10 @@ def getEvens(intRange):
 
     return out
 
+
 """Returns the odd numbers of a given range using a while loop."""
+
+
 def getOdds(intRange):
     if type(intRange) is not range:
         raise TypeError("intRange not of type range")
@@ -38,8 +43,9 @@ def getOdds(intRange):
 
     return out
 
+
 def main():
-    testRange = range(1,20)
+    testRange = range(1, 20)
     # test of getEvens method
     result1 = getEvens(testRange)
     print(result1)
@@ -47,6 +53,7 @@ def main():
     # test of getEvens method
     result2 = getOdds(testRange)
     print(result2)
+
 
 if __name__ == "__main__":
     main()
